@@ -4,11 +4,14 @@ import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { X } from 'lucide-react'
 
 const photos = [
-  { src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80', alt: 'Restaurant intérieur', span: 'md:col-span-2' },
+  { src: '/photos/image 1.png', alt: 'Le Rocher d\'Atlas', span: '' },
+  { src: '/photos/image 2.png', alt: 'Le Rocher d\'Atlas', span: '' },
+  { src: '/photos/image 3.png', alt: 'Le Rocher d\'Atlas', span: '' },
+  { src: '/photos/image 4.png', alt: 'Le Rocher d\'Atlas', span: '' },
   { src: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80', alt: 'Plat marocain', span: '' },
   { src: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80', alt: 'Tajine', span: '' },
   { src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80', alt: 'Ambiance', span: '' },
-  { src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=80', alt: 'Vue Atlas', span: 'md:col-span-2' },
+  { src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=80', alt: 'Vue Atlas', span: '' },
 ]
 
 export default function Gallery() {
@@ -30,7 +33,7 @@ export default function Gallery() {
         </h2>
       </motion.div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 auto-rows-[220px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 auto-rows-[400px]">
         {photos.map((photo, i) => (
           <motion.div
             key={photo.src}
@@ -43,7 +46,7 @@ export default function Gallery() {
             <img
               src={photo.src}
               alt={photo.alt}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-stone-950/0 group-hover:bg-stone-950/30 transition-all duration-300" />
           </motion.div>

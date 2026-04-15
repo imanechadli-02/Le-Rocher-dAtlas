@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion'
 
 const stats = [
   { value: '808', label: 'Avis Google' },
-  { value: '15+', label: 'Années d\'expérience' },
+  { value: '+6 ans', label: 'Années d\'expérience' },
   { value: '100%', label: 'Produits locaux' },
   { value: '3.5★', label: 'Note Google' },
 ]
